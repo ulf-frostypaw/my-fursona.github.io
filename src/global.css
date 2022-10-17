@@ -1,0 +1,1921 @@
+@charset "utf-8";
+/* -------------------------------- 
+ MYFURSONA.COM STYLESHEET
+ global.css
+-----------------------------------
+ Images marked "IE6 FIX" can be
+ removed once proper image and
+ avatar thumbnails have been 
+ implemented.
+-------------------------------- */
+
+/* --- GENERAL --- */
+
+body {
+ background:#FFFFFF;
+ color:#000000;
+ margin:0;
+ padding:0;
+ font-family:Verdana, Arial, Helvetica, sans-serif;
+ /* line-height:1.1em;*/
+}
+
+div#codeblock, div#quoteblock {
+ background:#fff;
+ padding:5px;
+ width:95%;
+ margin:0 auto;
+ color:#000000;
+ border-left:3px solid #CCCCCC;
+}
+
+div#codeblock a, div#quoteblock a {
+ color:#3B4F8C !important;
+}
+
+div#codeblock {
+ font-size:1.2em;
+}
+
+h1, h2, h3 {margin:0;padding:0;font-weight:normal;}
+h1.secthead, h2.secthead { margin:7px 0 8px 0; }
+h3.secthead { margin:7px 0 0 0; }
+h4 {margin:0;padding:0;font-size:1.2em;font-weight:bold;}
+p { margin-top:0; }
+
+.left { float:left; }
+.right { float:right; }
+.acenter { text-align:center; }
+.aleft { text-align:left; }
+.aright { text-align:right; }
+.clr, .clear { clear:both; }
+
+hr { position:absolute; top:-999em; left:-999em; }
+
+p.navigation { text-align:center; display:block; margin-top:1em; }
+p.navigation a:link, p.navigation a:visited { border:1px solid #EAEAEA !important; padding:4px; background:#FFFFFF; }
+p.navigation a:hover, p.navigation a:active { border:1px solid #EAEAEA !important; padding:4px; background:#F0F0F0; }
+p.navigation del { color:#CACACA; text-decoration:none; padding:4px; border:1px solid #F3F3F3 !important; }
+p.navigation a, p.navigation del { margin:0 1px; height:30px; }
+p.navigation a.prev, p.navigation del.prev { font-weight:bold; } 
+p.navigation a.next, p.navigation del.next { font-weight:bold; }
+
+form {
+ margin:0; padding:0;
+}
+
+.information {  
+ /*background:url('/web/20110211154847im_/http://myfursona.com/assets/images/information.jpg') center left no-repeat #EAEAEA;*/
+ border-left:3px solid #CACACA;
+ padding:10px 10px 10px 70px; 
+ color:#000000;
+}
+
+.error {  
+ /* background:url('/web/20110211154847im_/http://myfursona.com/assets/images/error.jpg') center left no-repeat #E61319;*/
+ border-left:3px solid #9E0D11;
+ padding:10px 10px 10px 70px; 
+ color:#000000;
+}
+
+/* --- TITLES --- */
+
+.tim {
+ height:35px;
+ width:400px;
+ text-indent:-9999em;
+ margin-top:11px;
+}
+
+.tim#t_comments { /* background:url('/web/20110211154847im_/http://myfursona.com/assets/images/titles/title_comments.gif') top left no-repeat; */ }
+.tim#t_latestblogs { /* background:url('/web/20110211154847im_/http://myfursona.com/assets/images/titles/title_latestblogs.gif') top left no-repeat; */ }
+.tim#t_latestimages { /* background:url('/web/20110211154847im_/http://myfursona.com/assets/images/titles/title_latestimages.gif') top left no-repeat; */ }
+.tim#t_latestthreads { /* background:url('/web/20110211154847im_/http://myfursona.com/assets/images/titles/title_latestthreads.gif') top left no-repeat; */ }
+.tim#t_newmembers { /* background:url('/web/20110211154847im_/http://myfursona.com/assets/images/titles/title_newmembers.gif') top left no-repeat; */ }
+.tim#t_quickblog { /* background:url('/web/20110211154847im_/http://myfursona.com/assets/images/titles/title_quickblog.gif') top left no-repeat;  */}
+.tim#t_twitter { /* background:url('/web/20110211154847im_/http://myfursona.com/assets/images/titles/title_twitter.gif') top left no-repeat;  */}
+.tim#t_userinfo { /* background:url('/web/20110211154847im_/http://myfursona.com/assets/images/titles/title_userinfo.gif') top left no-repeat; */ }
+
+#t_welcome{ /* background:url('/web/20110211154847im_/http://myfursona.com/assets/images/titles/title_welcome.jpg') top left no-repeat;*/ text-indent:-9999em; width:587px; height:83px; margin-top:11px; }
+
+/* --- FORMS --- */
+
+.form { background:#DADADA;}
+.form .boxtop {  /* background: url('/web/20110211154847im_/http://myfursona.com/assets/images/for-ne.gif') no-repeat top right;*/ }
+.form .boxtop div {  height: 5px;  /* background: url('/web/20110211154847im_/http://myfursona.com/assets/images/for-nw.gif') no-repeat top left;*/ }
+.form .boxbottom {  /* background: url('/web/20110211154847im_/http://myfursona.com/assets/images/for-se.gif') no-repeat bottom right;*/ }
+.form .boxbottom div {  height: 5px;  /* background: url('/web/20110211154847im_/http://myfursona.com/assets/images/for-sw.gif') no-repeat bottom left;*/ }
+.form .boxcontent { padding: 0px 5px 0px 5px;}
+
+.formalt { background:#E8E8E8;}
+.formalt .boxtop {  /* background: url('/web/20110211154847im_/http://myfursona.com/assets/images/com-ne2.gif') no-repeat top right; */}
+.formalt .boxtop div {  height: 5px;  /* background: url('/web/20110211154847im_/http://myfursona.com/assets/images/com-nw2.gif') no-repeat top left; */}
+.formalt .boxbottom {  /* background: url('/web/20110211154847im_/http://myfursona.com/assets/images/com-se2.gif') no-repeat bottom right; */}
+.formalt .boxbottom div {  height: 5px;  /* background: url('/web/20110211154847im_/http://myfursona.com/assets/images/com-sw2.gif') no-repeat bottom left; */}
+.formalt .boxcontent { padding: 0px 5px 0px 5px;}
+
+.formalt2 { background:#F0F0F0;}
+.formalt2 .boxtop {  /* background: url('/web/20110211154847im_/http://myfursona.com/assets/images/com-ne.gif') no-repeat top right; */}
+.formalt2 .boxtop div {  height: 5px;  /* background: url('/web/20110211154847im_/http://myfursona.com/assets/images/com-nw.gif') no-repeat top left; */}
+.formalt2 .boxbottom {  /* background: url('/web/20110211154847im_/http://myfursona.com/assets/images/com-se.gif') no-repeat bottom right; */}
+.formalt2 .boxbottom div {  height: 5px;  /* background: url('/web/20110211154847im_/http://myfursona.com/assets/images/com-sw.gif') no-repeat bottom left; */}
+.formalt2 .boxcontent { padding: 0px 5px 0px 5px;}
+
+textarea {
+ font-family:Arial, Helvetica, sans-serif;
+ font-size:1em;
+}
+
+.fmb {
+ width:40px;
+ border:1px solid #4F6BBD;
+ background:#E9EBF1;
+ font-size:0.8em;
+}
+
+.fmb.b-b { font-weight:bold; }
+.fmb.b-i { font-style:italic; }
+.fmb.b-u { text-decoration:underline; }
+
+
+/* --- TABLES --- */
+
+table.table thead th {
+ border-bottom:1px solid #999999;
+}
+
+table.table tbody tr:hover {
+ background:#EAEAEA;
+}
+
+
+/* --- ANCHORS --- */
+
+#body_wrapper a:link, #body_wrapper a:visited {
+ color:#3B4F8C;
+ text-decoration:none;
+ border-bottom:1px solid #BDBDBD;
+}
+
+#body_wrapper a:hover, #body_wrapper a:active {
+ color:#3B4F8C;
+ text-decoration:none;
+ border-bottom:1px solid #BDBDBD;
+}
+
+#body_wrapper a:link img, #body_wrapper a:visited img {
+ border:none; /* Added by Kovu */
+ border-bottom:none;
+ background:none;
+}
+
+#body_wrapper a:hover img, #body_wrapper a:active img {
+ border:none; /* Added by Kovu */
+ border-bottom:none;
+ background:none;
+}
+
+
+/* --- SECTIONALS --- */
+
+.s1, .s2, .s3, .s4, .s5, .s6, .s7, .s8, .s9, .s10 { margin:0 0 17px 0; }
+div.s1 { border-top:8px solid #3B5998; }
+div.s2 { border-top:8px solid #6080E2; }
+div.s3 { border-top:8px solid #4F6BBD; }
+div.s4 { border-top:8px solid #3F5596; }
+div.s5 { border-top:8px solid #8DA1CC; }
+div.s6 { border-top:8px solid #E3E3E3; }
+div.s7 { border-top:8px solid #BDBDBD; }
+div.s8 { border-top:8px solid #969696; }
+div.s9 { border-top:8px solid #333333; }
+div.s10 { border-top:8px solid #000000; }
+
+
+/* --- HEADER --- */
+
+#header_wrapper {
+ /*background:url('/web/20110211154847im_/http://myfursona.com/assets/images/header_background.jpg') top left repeat-x #CCCCCC;*/
+ width:100%;
+ height:150px;
+ font-size:0.8em;
+ line-height:1em;
+}
+
+#header_wrapper h1 {
+ /*background:url('/web/20110211154847im_/http://myfursona.com/assets/images/banners/1.png') top left no-repeat;*/ /* Default: 1.png */
+ position:absolute; 
+ top:0;
+ left:0;
+ z-index:10;
+ width:435px; 
+ height:150px;
+ margin:0;
+ padding:0;
+ text-indent:-999em;
+}
+
+#header_wrapper h1 a {
+ display:block;
+ position:absolute; 
+ top:30px;
+ left:150px;
+ width:274px; 
+ height:60px;
+ /* background:url('/web/20110211154847im_/http://myfursona.com/assets/images/header_logo.png') center center no-repeat; */ /* Default: header_logo.png */
+}
+
+
+/* --- SEARCH --- */
+
+#header_wrapper #search_wrapper #searchform {
+ margin:35px 15px 0 15px;
+ padding:0;
+ float:right;
+}
+
+#header_wrapper #search_wrapper #searchform #terms {
+ /* background:url('/web/20110211154847im_/http://myfursona.com/assets/images/search_background.gif') center center no-repeat transparent;*/ 
+ width:150px;
+ height:16px;
+ border:0;
+ margin:0; 
+ padding:0;
+ font-size:0.8em;
+}
+
+#header_wrapper #search_wrapper #searchform #search {
+ position:absolute;
+ top:-999em;
+ left:-999em;
+}
+
+
+/* --- LOGGED IN MESSAGE --- */
+
+#header_wrapper #membermeta_wrapper {
+ position:absolute;
+ top:100px;
+ left:280px;
+ color:#666666;
+ font-size:0.8em;
+ z-index:20;
+}
+
+#header_wrapper #membermeta_wrapper .currentusername {
+ display:block;
+ margin-bottom:3px;
+}
+
+#header_wrapper #membermeta_wrapper .currentusername a {
+ color:#666666;
+ font-weight:bold;
+ font-size:1.8em;
+ text-decoration:none;
+}
+
+#header_wrapper #membermeta_wrapper a {
+ color:#666666;
+ text-decoration:none;
+}
+
+
+/* --- NAVIGATION --- */
+
+#navigation_wrapper {
+ /*background:url('/web/20110211154847im_/http://myfursona.com/assets/images/navigation_background.jpg') top left repeat-x #FFFFFF;*/
+ position:absolute;
+ top:150px;
+ left:0;
+ width:100%;
+}
+
+#navigation {
+
+ height:30px;
+ margin:0;
+ padding:0 1em 0 1em;
+ list-style-type:none;
+ border-top:1px solid #999999;
+ border-bottom:1px solid #999999;
+}
+
+#navigation a {
+ color:#3B4F8C;
+}
+
+#navigation li {
+ float:left;
+ margin:0 1em 0 0;
+ height:30px;
+ line-height:30px;
+}
+
+#navigation li.right {
+ float:right;
+ margin:0 0 0 1em;
+}
+
+#navigation li.right span {
+ position:relative;
+ top:-10px;
+ left:-17px;
+}
+
+#navigation li a {
+ line-height:30px;
+ height:30px;
+}
+
+#navigation li a img {
+ border:0;
+}
+
+
+/* --- BODY --- */
+
+#body_wrapper { 
+ position:absolute;
+ top:220px;
+ width:100%;
+ text-align:center;
+}
+
+#body_header, #body_inner { 
+ width:950px;
+ margin:0 auto 1em auto;
+ text-align:left;
+ font-size:.8em;
+}
+
+#body_header .col_left {
+ width:64%;
+ float:left;
+}
+
+#body_header .col_right {
+ width:35%;
+ float:right;
+}
+
+#body_inner .col_left {
+ width:49%;
+ float:left;
+}
+
+#body_inner .col_right {
+ width:49%;
+ float:right;
+}
+
+
+/* --- BODY HEADERS --- */
+
+h2.secthead {
+ font-family: Verdana;
+ line-height: 1em;
+ font-size: 24px;
+ text-align:left;
+}
+
+h2.secthead em {
+ font-style:normal;
+ font-weight:normal;
+}
+
+h2.secthead a {
+ color:#000000;
+ text-decoration:none;
+}
+
+h2.secthead a:hover {
+ color:#C9C9C9;
+ text-decoration:none;
+}
+
+h3.secthead {
+ font-family: Verdana;
+ line-height: 1em;
+ font-size: 18px;
+ width:100%; 
+ text-align:left;
+ margin-bottom:.5em;
+}
+
+
+/* --- PROFILE EDITOR / LOGIN BOX --- */
+
+#prof {
+ background:#3B5998;
+ padding:0.3em;
+ color:#FFFFFF;
+}
+
+#prof_inner {
+ background:#8DA1CC;
+ padding:0.3em;
+}
+
+#prof_inner a {
+ color:#FFFFFF !important;
+ border-bottom:none !important;
+}
+
+#prof_inner a img {
+ vertical-align:middle;
+ border:0;
+}
+
+#prof h2 {
+ font-family: Verdana;
+ line-height: 1em;
+ font-weight:bold;
+ font-size: 24px;
+ background:#3B5998;
+ text-align:left;
+ color:#FFFFFF;
+}
+
+#prof img.av {
+ float:right; 
+ margin:0 0 0 1em;
+ max-width:100px;
+ max-height:100px;
+}
+
+#prof h3 {
+ font-weight:bold;
+ margin-bottom:.3em;
+}
+
+
+/* --- NEWS --- 
+   See also: VIEW IMAGE section */
+
+#recentnews {
+ background:#F8F8F8;
+ padding:5px;
+ margin:10px 0 10px 0;
+ border:1px solid #CCCCCC;
+ border-left:0; border-right:0;
+ font-size:0.8em;
+}
+
+#news {
+ background: #333333; 
+ color:#FFFFFF;
+}
+
+#news h2.secthead {
+ color:#F0F0F0;
+}
+
+#news a:link, #news a:visited {
+ color:#EAEAEA;
+ background:none;
+}
+
+#news a:hover, #news a:active {
+ color:#EAEAEA;
+ background:none;
+}
+
+#recentnews a:link, #recentnews a:visited {
+ color:#000000 !important;
+ text-decoration:none !important;
+ border:0 !important;
+}
+
+#recentnews a:hover, #recentnews a:active {
+ color:#000000 !important;
+ text-decoration:underline !important;
+ border:0 !important;
+ background:none !important;
+}
+
+.postmeta {
+ text-align:right;
+ font-style:italic;
+ font-size:0.8em;
+ line-height:1.5em;
+}
+
+.comments {
+ float:left;
+ text-align:center;
+ width:100px;
+ display:block;
+}
+
+.comments a:link, .comments a:visited, .comments a:hover, .comments a:active {
+ border:1px solid #666666 !important;
+ padding:6px 3px 3px 3px;
+ background:#444444 !important;
+ display:block;
+ color:#EAEAEA !important;
+}
+
+.comments a strong {
+ display:block;
+ font-size:2.1em;
+}
+
+
+/* --- LATEST STUFF --- */
+
+#latest ul {
+ list-style-type:none;
+ margin:0 0 1.2em 0;
+ padding:0;
+}
+
+#latest ul#newestmembers li {
+ display:inline;
+ margin-right:0.5em;
+}
+
+/* --- GALLERY --- 
+   From http://joshuaink2006.johnoxton.co.uk/blog/206/css-photo-gallery-template
+   Edited by ToriBelliachi */
+
+.gallery ul {
+	margin:0;
+    padding:0;
+}
+
+.gallery li {
+	width:200px;
+    height:140px;
+	border:solid #CCC;
+	border-width:1px;
+	background:#FFF;
+	padding:10px;
+	text-align:center;
+	position:relative;
+	float:left;
+	display:inline;
+	margin:5px;
+}
+
+.gallery a{
+	border:0 !important;
+    background:none !important;
+    display:block;
+    width:200px;
+    height:140px;
+}
+
+.gallery a span{
+/*\*/
+	position:absolute;
+	left:-9999px;
+
+}
+
+.gallery a:hover span{	
+	top:10px;
+	left:0px;
+	width:100%;
+	font-weight:bold;
+	background:#FFF;
+	color:#999;
+	padding:5px 0 5px 0;
+	text-transform:uppercase;
+	font-size:80%;
+	border:1px solid #CCC;
+	border-width:0 0 8px 0;
+/**/
+} 
+
+.gallery a:hover {
+	white-space: normal; /* IE6 fix - don't remove this one */
+}
+
+.gallery img{
+	border:1px solid #DADADA !important;
+	max-width:200px;
+	max-height:140px;
+	overflow:hidden;
+}
+
+
+/* Homepage Edits */
+
+#latest .gallery {
+	text-align:center;
+}
+
+#latest .gallery li {
+	width:42%;
+    height:115px;
+    text-align:center;
+}
+
+#latest .gallery a {
+	width:100%;
+    height:115px;
+}
+
+#latest .gallery a:hover span{	
+	width:100%;
+	border:1px solid #CCC;
+	border-width:0 0 4px 0;
+} 
+
+#latest .gallery img{
+	max-width:150px;
+	max-height:115px;
+}
+
+
+/* Userpage Edits */
+
+#usergall.gallery {
+	text-align:center;
+}
+
+#usergall.gallery li {
+	width:42%;
+    height:115px;
+    text-align:center;
+}
+
+#usergall.gallery a {
+	width:100%;
+    height:115px;
+}
+
+#usergall.gallery a:hover span{	
+	width:100%;
+	border:1px solid #CCC;
+	border-width:0 0 4px 0;
+} 
+
+#usergall.gallery img{
+	max-width:150px;
+	max-height:115px;
+}
+
+
+/* --- BLOGS - NEW STYLE --- */
+
+.blogs2 {
+ margin:0; 
+ padding:0;
+ overflow:hidden;
+ width:100%;
+ list-style:none;
+}
+
+.blogs2 li {
+ margin:0 0 1em 0;
+ padding:0.5em;
+ height:50px;
+ overflow:hidden;
+}
+
+.blogs2 li:hover {
+ background:#EAEAEA;
+}
+
+.blogs2 li div {
+ width:50px;
+ height:50px;
+ margin-right:1em;
+ float:left;
+}
+
+.blogs2 li div img.av {
+ max-width:50px;
+ max-height:50px;
+}
+
+.blogs2 li strong {
+ font-size:1.2em;
+ margin-right:2em;
+} 
+
+.blogs2 li small, .blogs2 li small a {
+ color:#777777;
+ text-decoration:none;
+ border-bottom:0 !important;
+}
+
+
+/* --- USERS --- */
+
+.users {
+ margin:0; 
+ padding:0;
+ overflow:hidden;
+ width:100%;
+ list-style:none;
+ position:relative; top:0; left:0;
+}
+
+.users li {
+ margin:0 0 1em 0;
+ padding:0.5em;
+ height:100px;
+ float:left;
+ display:inline; /* For IE so it doesn't double the 1% left margin */
+ width:48%;
+ position:relative; /* This is the key */
+}
+
+.users li div {
+ width:100px;
+ height:100px;
+ margin-right:1em;
+ float:left;
+}
+
+.users li div img {
+ max-width:100px;
+ max-height:100px;
+}
+
+.users li:hover {
+ background:#EAEAEA;
+}
+
+.users li .title {
+ font-size:1.2em;
+ font-weight:bold;
+}
+
+.users small {
+ font-size:0.8em;
+}
+
+.users li img {
+ border:0 !important;
+}
+
+
+/* --- QUICK BLOG --- */
+
+#quickblog {
+ margin-top:1.5em;
+}
+
+#quickblog_wrapper #title {
+ width:380px;
+}
+
+#quickblog_wrapper #blogentry {
+ width:452px;
+ z-index:20;
+}
+
+
+/* --- CONS & MEETS --- */
+
+#meetcenter select#m-country option {
+ background-repeat:no-repeat;
+ background-position:center left;
+ padding-left:20px;
+}
+
+/* For meet slider layout only */
+.meetslist strong {
+ font-size:1.2em;
+ margin-right:2em;
+} 
+
+.meetslist small, .meetslist small a {
+ color:#777777;
+ text-decoration:none;
+ border-bottom:0 !important;
+}
+
+.news_slider .fl {
+ float: left;
+ display: inline;
+}
+
+.news_slider img {
+ border: 0;
+ display: block;
+ max-width:150px;
+ max-height:50px;
+}
+
+.news_slider {
+ position: relative;
+ width: 950px;
+ margin: 0 0 20px 0;
+ text-align: left;
+ height:10em;
+}
+
+.news_slider .messaging {
+ display: block;
+ padding: 5px;
+ margin: 0 20px 5px 20px;
+ background: #ffffcc;
+}
+
+.news_slider .prev, .news_slider .next {
+ position: absolute;
+ top: 50%;
+ display: none;
+ border-bottom:none !important;
+}
+
+.news_slider .next { right: -16px; }
+.news_slider .prev { left: -16px; }
+
+.news_slider .container {
+ position: relative;
+ top: 0;
+ left: 0;
+ width: 100%;
+ background: #eeeeed;
+}
+
+.news_slider .news_items {
+ /* The width must be equal to .item ((width + margin-right) * 2). */
+ position:relative;
+ width:950px;
+ top:0;
+ left:0;
+ overflow:hidden;
+}
+
+.news_slider .view_all {
+ padding:5px; 
+ margin:0 0 2px 0;
+ border-top:#eeeeed 1px solid;
+ border-bottom:#eeeeed 1px solid;
+ text-align:center;
+}
+
+.news_slider .item {
+ /* Must contain a width and a margin-right. */
+ width:475px;
+ margin-right:0px;
+}
+
+.news_slider .item div {
+ width:260px; 
+ padding:10px 0 10px 0;
+}
+
+.news_slider .item img {
+ margin:10px;
+}
+*/
+
+.meetsbox strong {
+ font-size:1.2em;
+ margin-right:2em;
+} 
+
+.meetsbox small, .meetsbox small a {
+ color:#777777;
+ text-decoration:none;
+ border-bottom:0 !important;
+}
+
+.meetsbox .meet {
+ margin-top:3px;
+ padding:3px;
+ border:1px solid #E0E0E0;
+}
+
+.meetsbox .meet:hover {
+ background:#EEEEE9;
+ border:1px solid #DADADA;
+}
+
+
+/* --- USERPAGE --- */
+
+#news, #interests, #information, #friendslist, #spreadtheword, #usergall, #comments { 
+ margin:0 0 10px 0 !important;
+}
+
+.uplinks a {
+ border:0 !important;
+ background:none;
+}
+
+#userblock {
+ width:100%;
+}
+
+#userblock #userblock_inner {
+ background:#FAFAFA;
+ border:1px solid #DADADA;
+ border-top-width:4px;
+ padding:3px 3px 5px 3px;
+ color:#333333;
+}
+
+#userblock #userblock_inner #avwrap {
+ width:100px;
+ height:100px;
+ float:left;
+ margin-right:1em;
+}
+
+#userblock #userblock_inner img.av {
+ max-width:100px;
+ max-height:100px;
+}
+
+#userblock #userblock_inner div {
+ display:block;
+}
+
+#userblock #userblock_inner div.options {
+ float:right;
+}
+
+#userblock #userblock_inner div.options a img {
+ border:0 !important;
+}
+
+#userblock #userblock_inner .title {
+ font-size:1.5em;
+ margin:0.2em 0 0.3em 0;
+}
+
+#userblock #userblock_stats {
+ width:180px;
+ float:right;
+}
+
+#userblock #usernav {
+ list-style-type:none;
+ margin:0;
+ padding:0;
+ display:block;
+}
+
+#userblock #usernav li {
+ display:inline;
+ margin:0 0.1em 0 0;
+}
+
+#userblock #usernav li.extra {
+ margin-left:2em;
+}
+
+#userblock #usernav li a:link, #userblock #usernav li a:visited {
+ padding:3px;
+ background:#EAEAEA;
+ text-decoration:none;
+ border:1px solid #DADADA;
+}
+
+#userblock #usernav li a:hover, #userblock #usernav li a:active {
+ padding:3px;
+ background:#FAFAFA;
+ text-decoration:none;
+ border-top:0;
+}
+
+#media {
+ text-align:center;
+ margin:1.3em 0;
+} 
+
+#interests { 
+ background:#F8F8F8;
+ padding:10px;
+ border:1px solid #CCCCCC;
+ overflow:hidden;
+}
+
+#interests h4 {
+ border-bottom:1px solid #DFDFDF;
+}
+
+#interests img.av {
+ max-width:50px;
+ max-height:50px;
+ vertical-align:middle;
+}
+
+.users .uplinks a span.tip-content {
+ left:-13px;
+}
+
+#userblock_inner .options a span.tip-content, .users .uplinks a span.tip-content { 
+ display:none;
+}
+
+#userblock_inner .options a:hover span.tip-content, .users .uplinks a:hover span.tip-content {
+ display:block;
+}
+
+#userblock_inner .options a, .users .uplinks a {
+ position:relative;
+}
+
+#userblock_inner .options a:hover span.tip-content, .users .uplinks a:hover span.tip-content {
+ position:absolute;
+ width:100px;
+ padding:3px;
+ z-index:1000;
+ background:#333333;
+ color:#FFFFFF;
+ font-size:0.8em;
+ text-align:center;
+}
+
+#userblock_inner .options a span.tip-content { top:20px; left:-60px; }
+.users .uplinks a span.tip-content {  left:0px; }
+
+#spreadtheword { 
+ background:#CC0000;
+ border:3px solid #A60000;
+ padding:0.5em;
+ color:#FFFFFF;
+}
+
+#spreadtheword h3 {
+ font-weight:bold;
+}
+
+#noinfo {
+ padding:30px 10px 50px 10px;
+ color:#DDDDDD;
+ font-size:1.5em;
+ text-align:center;
+}
+
+#noinfo span {
+ cursor:pointer;
+} 
+
+/* --- FRIENDS --- */
+
+#friendslist {
+ padding:10px 0;
+}
+
+ul.friends a, ul.friends img {
+ border:none !important;
+ background:none !important;
+}
+
+ul.friends {
+ list-style-type:none;
+ margin:0;
+ padding:0;
+ text-align:center;
+}
+
+ul.friends li {
+ display:table-cell;
+ float:left;
+ width:155px;
+ height:100px;
+ text-align:center;
+ vertical-align:bottom;
+}
+
+ul.friends li img {
+ max-width:50px;
+ max-height:50px;
+} 
+
+a.more {
+	display:block;
+    border:0 !important;
+    width:100% !important;
+    height:1em !important;
+    padding:10px 0 10px;
+    font-weight:bold;
+    background:#EAEAEA !important;
+    clear:both;
+    line-height:1em;
+    text-align:center;
+}
+
+
+/* --- COMMENTS --- */
+
+#comments {
+ clear:both;
+}
+
+ul.commentlist {
+ list-style-type:none;
+ margin:0;
+ padding:0;
+}
+
+ul.commentlist a, ul.commentlist img {
+ border:0 !important;
+ background:none !important;
+}
+
+ul.commentlist li { margin:0 0 1.2em 0; padding:0; background:#F0F0F0; }
+ul.commentlist li .boxtop {  /*background: url('/web/20110211154847im_/http://myfursona.com/assets/images/com-ne.gif') no-repeat top right; */}
+ul.commentlist li .boxtop div {  height: 5px; /* background: url('/web/20110211154847im_/http://myfursona.com/assets/images/com-nw.gif') no-repeat top left;*/ }
+ul.commentlist li .boxbottom {  /* background: url('/web/20110211154847im_/http://myfursona.com/assets/images/com-se.gif') no-repeat bottom right; */ }
+ul.commentlist li .boxbottom div {  height: 5px;  /*background: url('/web/20110211154847im_/http://myfursona.com/assets/images/com-sw.gif') no-repeat bottom left; */}
+ul.commentlist li .boxcontent { padding: 0px 5px 0px 5px; }
+
+ul.commentlist li:hover { background:#E8E8E8; }
+ul.commentlist li:hover .boxtop {  /* background: url('/web/20110211154847im_/http://myfursona.com/assets/images/com-ne2.gif') no-repeat top right; */}
+ul.commentlist li:hover .boxtop div {  height: 5px;  /* background: url('/web/20110211154847im_/http://myfursona.com/assets/images/com-nw2.gif') no-repeat top left; */}
+ul.commentlist li:hover .boxbottom {  /* background: url('/web/20110211154847im_/http://myfursona.com/assets/images/com-se2.gif') no-repeat bottom right; */}
+ul.commentlist li:hover .boxbottom div {  /* background: url('/web/20110211154847im_/http://myfursona.com/assets/images/com-sw2.gif') no-repeat bottom left; */}
+
+ul.commentlist li img {
+ max-width:50px;
+ max-height:50px;
+ float:right;
+}
+
+
+ul.commentlist li .boxcontent div {
+ margin-top:0.7em;
+}
+
+#addcomment #comment {
+ width:935px;
+}
+
+#addcomment #ucomment, #bloggit #ucomment, #bloggit #title {
+ width:450px;
+}
+
+#commentadd .boxcontent, #quickblog_wrapper .boxcontent {
+ padding-bottom:24px;
+}
+
+#addcomment #submit {
+ /* background:url('/web/20110211154847im_/http://myfursona.com/assets/images/button_background.gif') bottom right no-repeat transparent; */
+ color:#FFFFFF;
+ border:0;
+ margin:0;
+ padding:0;
+ height:30px;
+ width:75px;
+}
+
+.commentlist li div.boxcontent img.av {
+ float:none !important;
+ vertical-align:middle !important;
+}
+
+
+/* --- VIEW IMAGE --- */
+
+#viewimage {
+ width:100%;
+ text-align:center;
+}
+
+#infowrap {
+ width:800px;
+ margin:0 auto;
+}
+ 
+#infoblock { 
+ width:750px;
+ margin:12px auto 20px auto;
+ background: #333333; 
+ color:#FFFFFF;
+}
+
+#metainfo {
+ width:160px;
+ float:right;
+ margin:25px 0 20px auto;
+ padding:12px 5px;
+ border-bottom:1px dotted #666666;
+ border-top:1px dotted #666666;
+}
+
+#metainfo a {
+ border-bottom:none !important;
+}
+
+.more {
+ width:100%;
+ background:#333333;
+ color:#FFFFFF;
+ text-align:right;
+ clear:both;
+ margin:1.2em 0;
+}
+
+.more a {
+ color:#FFFFFF !important;
+}
+
+#infoblock .boxtop, #news .boxtop, .more .boxtop { 
+ /* background: url('/web/20110211154847im_/http://myfursona.com/assets/images/ne.gif') no-repeat top right; */
+}
+
+#infoblock .boxtop div, #news .boxtop div, .more .boxtop div { 
+ height: 10px; 
+ /* background: url('/web/20110211154847im_/http://myfursona.com/assets/images/nw.gif') no-repeat top left; */
+}
+
+#infoblock .boxbottom, #news .boxbottom, .more .boxbottom { 
+ /* background: url('/web/20110211154847im_/http://myfursona.com/assets/images/se.gif') no-repeat bottom right; */
+}
+
+#infoblock .boxbottom div, #news .boxbottom div, .more .boxbottom div { 
+ height: 10px; 
+ /* background: url('/web/20110211154847im_/http://myfursona.com/assets/images/sw.gif') no-repeat bottom left; */
+}
+
+#infoblock .boxcontent, #news .boxcontent, .more .boxcontent {
+ padding: 0px 10px 0px 10px;
+}
+
+#infoblock .boxcontent a img.av, #news .boxcontent a img.av, .more .boxcontent a img.av {
+ max-width:50px;
+ max-height:50px;
+ vertical-align:middle;
+ border:none !important;
+}
+
+#infoblock a {
+ color:#FFFFFF !important;
+}
+
+/* --- USER/ADMIN CONTROL PANEL ---
+   From http://stilbuero.de/jquery/tabs_3/
+   Edited by ToriBelliachi */
+
+.ui-tabs-hide {
+ display: none;
+}
+
+.ui-tabs-nav {
+    list-style: none;
+    margin: 0;
+    padding: 0 0 0 4px;
+}
+
+.ui-tabs-nav:after { /* clearing without presentational markup, IE gets extra treatment */
+    display: block;
+    clear: both;
+    content: " ";
+}
+
+.ui-tabs-nav li {
+    float: left;
+    margin: 0 0 0 1px;
+    min-width: 84px; /* be nice to Opera */
+}
+
+.ui-tabs-nav a, .ui-tabs-nav a span {
+    display: block;
+    padding: 0 10px;
+    background: #F8F8F8;
+}
+
+#usercp div ul.ui-tabs-nav li,
+#admincp div ul.ui-tabs-nav li {
+ min-width:120px;
+}
+
+.ui-tabs-nav a {
+    margin: 1px 0 0; /* position: relative makes opacity fail for disabled tab in IE */
+    padding-left: 0;
+    color: #27537a;
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap; /* required in IE 6 */    
+    outline: 0; /* prevent dotted border in Firefox */
+    border-color:#97a5b0;
+    border-style:solid;
+    border-width:1px 1px 0px 1px !important;
+}
+
+#usercp div ul.ui-tabs-nav li a,
+#admincp div ul.ui-tabs-nav li a {
+ font-weight:normal !important;
+ border-width:0 !important;
+ margin-bottom:10px !important;
+ text-align:left !important;
+ padding:0 0 0 0 !important;
+}
+
+.ui-tabs-nav .ui-tabs-selected a {
+    position: relative;
+    top: 1px;
+    z-index: 2;
+    margin-top: 0;
+    color: #000;
+}
+
+#usercp div ul.ui-tabs-nav li.ui-tabs-selected a,
+#admincp div ul.ui-tabs-nav li.ui-tabs-selected a {
+ font-weight:bold !important;
+}
+
+
+.ui-tabs-nav a span {
+    width: 64px; /* IE 6 treats width as min-width */
+    min-width: 64px;
+    height: 18px; /* IE 6 treats height as min-height */
+    min-height: 18px;
+    padding-top: 6px;
+    padding-right: 0;
+}
+
+*>.ui-tabs-nav a span { /* hide from IE 6 */
+    width: auto;
+    height: auto;
+}
+
+.ui-tabs-nav .ui-tabs-selected a span {
+    padding-bottom: 1px;
+}
+
+.ui-tabs-nav .ui-tabs-selected a:link, .ui-tabs-nav .ui-tabs-selected a:visited { /* @ Opera, use pseudo classes otherwise it confuses cursor... */
+
+    cursor: text;
+}
+
+.ui-tabs-nav a:hover, .ui-tabs-nav a:focus, .ui-tabs-nav a:active,
+.ui-tabs-nav .ui-tabs-unselect a:hover, .ui-tabs-nav .ui-tabs-unselect a:focus, .ui-tabs-nav .ui-tabs-unselect a:active { /* @ Opera, we need to be explicit again here now... */
+    cursor: pointer;
+}
+
+.ui-tabs-panel {
+    border: 1px solid #97a5b0;
+    padding: 1em 8px;
+    background: #F8F8F8; /* declare background color for container to avoid distorted fonts in IE while fading */
+}
+
+#spreadtheword .ui-tabs-panel {
+    border:none;
+    background:#F20000; /* declare background color for container to avoid distorted fonts in IE while fading */
+}
+
+#spreadtheword .ui-tabs-nav a, #spreadtheword .ui-tabs-nav a span {
+    background: #F20000;
+    color:#FFFFFF;
+}
+
+#spreadtheword .ui-tabs-nav a {
+    border-width:0 0 1px 0 !important;
+    text-align:left;
+    font-weight:normal;
+    display:inline;
+    border-bottom:1px dotted #A60000;
+}
+
+#spreadmyfur{
+ background:#F20000;
+}
+
+/* Additional IE specific bug fixes... */
+* html .ui-tabs-nav { /* auto clear, @ IE 6 & IE 7 Quirks Mode */
+ display: inline-block;
+}
+*:first-child+html .ui-tabs-nav  { /* @ IE 7 Standards Mode - do not group selectors, otherwise IE 6 will ignore complete rule (because of the unknown + combinator)... */
+ display: inline-block;
+}
+
+/* Added id:forgot by Kovu */
+#usercp div fieldset div, #admincp div fieldset div, #login .boxcontent div, #forgot .boxcontent div, #register .boxcontent div {
+ clear:both;
+ padding-bottom:5px;
+ display:block;
+ width:100%;
+}
+
+#usercp div fieldset, #admincp div fieldset {
+ border:1px solid #DADADA;
+}
+
+#usercp div fieldset legend, #admincp div fieldset legend {
+ padding:0 10px;
+ text-transform:uppercase;
+ color:#666666;
+ font-size:0.9em;
+ font-weight:bold;
+}
+
+#quickblog_wrapper #title, #quickblog_wrapper textarea, #addcomment textarea, #newblog #title, #newblog textarea, #description #title, #description textarea, #filetype input, #description #tags, #login input, #register input, #register select, 
+#usercp div fieldset input, #usercp div fieldset select, #usercp div fieldset textarea,
+#admincp div fieldset input, #admincp div fieldset select, #admincp div fieldset textarea {
+ border:1px solid #DADADA;
+ background:#FAFAFA;
+}
+
+/* Added by Kovu */
+input, select, textarea {
+ border:1px solid #DADADA;
+ background:#FAFAFA;
+}
+
+#quickblog_wrapper #title:focus, #quickblog_wrapper textarea:focus, #addcomment textarea:focus, #newblog #title:focus, #newblog textarea:focus, #description #title:focus, #description textarea:focus, #description #tags:focus, #login input:focus, #register input:focus, #register select:focus, #filetype input:focus, 
+#usercp div fieldset input:focus, #usercp div fieldset select:focus, #usercp div fieldset textarea:focus,
+#admincp div fieldset input:focus, #admincp div fieldset select:focus, #admincp div fieldset textarea:focus {
+ border:1px solid #4F6BBD;
+ background:#FFFFFF;
+}
+
+/* Added by Kovu */
+input:focus, select:focus, textarea:focus {
+ border:1px solid #4F6BBD;
+ background:#FFFFFF;
+}
+
+#usercp div label, #admincp div label {
+ line-height:1.6em;
+ text-align:right;
+ margin-right:10px;
+ width:140px;
+ float:left;
+}
+
+#usercp #submit, #admincp #submit {
+ margin-left:1em;
+}
+
+
+/* --- NEW BLOG --- */
+
+#newblog #title, #description #title, #sendmessage #title { 
+ font-size:2em;
+ width:935px;
+}
+
+#newblog #thisistheblog, #sendmessage #pmessage, #description #imgdesc, #description #tags {
+ width:935px;
+}
+
+
+/* --- UPLOAD --- */
+
+#imageupload #filetype input {
+ text-align:right;
+ float:left;
+}
+
+#imageupload .boxcontent div {
+ clear:both;
+ padding-bottom:5px;
+ display:block;
+ width:100%;
+}
+
+
+/* --- REGISTER / LOGIN --- */
+
+/* Added id:forgot by Kovu */
+#login label, #forgot label, #register label {
+ line-height:1.6em;
+ text-align:right;
+ margin-right:10px;
+ width:140px;
+ float:left;
+}
+
+
+/* --- FOOTER --- */
+
+#footer_wrapper {
+ /* background:url('/web/20110211154847im_/http://myfursona.com/assets/images/footer_background.jpg') bottom left repeat-x #FFFFFF; */
+ width:100%;
+ height:30px;
+ font-size:0.6em;
+ position:relative;
+ top:32px;
+}
+
+#footer_wrapper .copyright {
+ float:right;
+ padding:0.3em 2em 0 2em;
+}
+
+#footer_wrapper .copyright a {
+
+ color:#999999;
+ text-decoration:none;
+}
+
+
+#footer_wrapper .contact {
+ float:left;
+ padding:0.3em 2em 0 2em;
+}
+
+#footer_wrapper .contact a {
+ color:#999999;
+ text-decoration:none;
+}
+
+
+/* --- SEARCH PAGE --- */
+
+#searchfilter {
+ text-align:center;
+} 
+
+
+/* --- PRETTY FORM BUTTONS
+       From http://www.oscaralexander.com/tutorials/how-to-make-sexy-buttons-with-css.html --- */
+
+a.button {
+    /* background: transparent url('/web/20110211154847im_/http://myfursona.com/assets/images/bg_button_a.gif') no-repeat scroll top right;*/
+
+    color: #444;
+    display: block;
+    float:left;
+    font: normal 12px arial, sans-serif;
+    height: 24px;
+    margin-right: 6px;
+    padding-right: 18px; /* sliding doors padding */
+    text-decoration: none;
+    border-bottom:none !important;
+}
+
+a.button span {
+    /* background: transparent url('/web/20110211154847im_/http://myfursona.com/assets/images/bg_button_span.gif') no-repeat;*/
+    display: block;
+    line-height: 14px;
+    padding: 5px 0 5px 9px;
+}
+
+a.button:active {
+    background-position: bottom right;
+    color: #000;
+    outline: none; /* hide dotted outline in Firefox */
+
+}
+
+a.button:active span {
+    background-position: bottom left;
+    padding: 6px 0 4px 9px; /* push text down 1px */
+}
+
+.boxcontent { overflow:hidden !important; }
+
+/* --- ABOUT SECTIONS --- */
+
+#about_inner { 
+ font-family:Georgia,'Times New Roman','Times',serif;
+ font-size:0.96em;
+ width:950px;
+ margin:0 auto 1em auto;
+ text-align:left;
+ line-height:1.3em;
+}
+
+#about_inner .col_left {
+ width:49%;
+ float:left;
+}
+
+#about_inner .col_right {
+ width:49%;
+ float:right;
+}
+
+#about_inner h2, #about_inner .indent h3 {
+ font-weight:bold;
+}
+
+#about_inner .indent {
+ margin-left:4em;
+}
+
+/* Title replacement */
+
+#about_inner #aboutmenu { text-align:center; margin-bottom:1.3em; }
+#about_inner #aboutmenu h2 { /*background:url('/web/20110211154847im_/http://myfursona.com/assets/images/about-title.gif') center center no-repeat #FFFFFF; */ border-bottom:1px solid #999999; font-weight:normal; font-size:3em; line-height:1em; }
+
+#about_inner .menu {
+	margin: 0 auto;
+	padding: 0;
+	list-style: none;
+}
+
+#about_inner .menu li {
+	padding: 0;
+	margin: 0 2px;
+	display:inline;
+	position: relative;
+	text-align: center;
+}
+
+#about_inner .menu a {
+	padding: 14px 10px;
+	display: table-cell;
+	color: #000000;
+	width: 144px;
+	text-decoration: none;
+	border-bottom:none !important;
+	/* background: url('/web/20110211154847im_/http://myfursona.com/assets/images/about-button.gif') no-repeat center center; */
+}
+
+#about_inner .menu li em {
+	/* background: url('/web/20110211154847im_/http://myfursona.com/assets/images/about-hover.png') no-repeat; */
+	width: 180px;
+	height: 65px;
+	position: absolute;
+	top: -75px;
+	left: -15px;
+	text-align: center;
+	padding: 10px 12px 10px;
+	font-style: normal;
+	z-index: 130;
+	display: none;
+	font-size:0.86em;
+}
+
+/* Staff Listings */
+
+#stafflist {
+ border-top:6px dotted #CCCCCC;
+ padding:10px;
+}
+
+#stafflist h2 {
+ margin:5px 0;
+}
+
+#stafflist .col_left {
+ width:29%;
+ float:left;
+ margin:0 5px 0 0;
+}
+
+div.profile {
+ clear:both;
+ padding:0 0 0 0.7em;
+ border-left-style:solid;
+ border-left-width:3px;
+ margin-bottom:0.2em;
+ font-size:0.8em;
+ height:100px;
+}
+
+div.profile a {
+ border-bottom:none !important;
+}
+
+div.profile img.av {
+ float:right;
+ margin:0 0 0.2em 0.2em;
+ height:100px;
+ width:100px;
+}
+
+div.profile h3 {
+ padding:0.7em 0 0.7em 0;
+}
+
+div.profile.other { border-left-color:#666666; background:#DEDEDE; }
+div.profile.coder { border-left-color:#CCCCCC; background:#F7F7F7; }
+div.profile.designer { border-left-color:#FFCC00; background:#FFF0B2; }
+div.profile.community { border-left-color:#CC0099; background:#FFD9F5; }
+div.profile.helpdesk { border-left-color:#009900; background:#33CC66; }
+
+
+
+
+
+
+/* ##################################################
+#####################################################
+## CODE HERE IS FOR EXPERIMENTAL FEATURES OR IDEAS ##
+#####################################################
+### PLEASE MOVE ANY CODE IN USE TO THE AREA ABOVE ###
+#####################################################
+################################################## */
+
+/* --- MESSAGE CENTER (Tori) --- */
+
+.mescenter a {
+ border-bottom:0 !important;
+ margin:0 .2em 0 .2em;
+}
+
+.mescenter img {
+ border:0;
+ vertical-align:middle;
+} 
+
+.mescenter_cont {
+ float:right;
+}
+
+.mescenter_comp {
+ float:left;
+}
+
+#mestable {
+ border:0;
+ margin:2em 0;
+}
+
+#mestable tr:hover {
+ background:#F8F8F8;
+ cursor:pointer;
+}
+
+
+/* --- Menu dropdown (Kovu) --- */
+
+.dropdown:hover {
+ position: relative;
+}
+
+.dropdown:hover span {
+	display: block;
+	position: absolute;
+	top: 0;
+	z-index: 999;
+	border:1px solid #DADADA;
+	background:#F2F2F2;
+	padding: 7px;
+	width: 250px;
+	color: #000000;
+	text-align: justify;
+}
+
+.dropdown span {
+	display: none;
+}
+
+
+/* --- Twitter integration (Tori)
+       Currently used on Tori's and Xerxes's userpages --- */
+
+#twitter_update_list {
+
+ list-style-type:square;
+ margin:0 0 0 1em;
+ padding:0;
+}
+
+#twitter_update_list li a {
+ display:none;
+}
+
+#twitter_update_list li:hover a {
+ display:inline;
+ border-bottom:none !important;
+ background:#333333;
+ color:#FFFFFF;
+ padding:2px;
+ float:right;
+ margin-top:-1.8em;
+ margin-bottom:-1.8em;
+ position:relative;
+ z-index:100;
+}
+
+/* --- ALTERNATE COMMENTS (disabled due to popular demand) ---
+.commentlist { 
+ list-style-type:none; 
+ font-size:1em;
+ margin:0; padding:0;
+} 
+
+li.comment {
+ margin-bottom:24px;
+ width:100%;
+ opacity:0.7;
+}
+
+li.comment:hover {
+ opacity:1.0;
+}
+
+li.comment blockquote {
+ background:#FAFAFA;
+ border:1px solid #C9C2C1;
+ margin:0px;
+ padding:10px;
+}
+
+li.comment blockquote p {
+ margin:0px;
+ padding:0px;
+}
+
+li.comment blockquote img.av {
+ max-width:50px;
+ max-height:50px;
+ border-bottom:none !important;
+ vertical-align:middle;
+}
+
+li.comment cite {
+ background:transparent url('/web/20110211154847im_/http://myfursona.com/assets/images/tip.gif') no-repeat scroll 20px 0pt;
+ font-style:normal;
+ margin:0px;
+ padding:10px 0px 0px 15px;
+ position:relative;
+ top:5px;
+ color:#868686;
+}
+
+li.comment div#quoteblock cite {
+ background:none !important;
+ padding:0;
+ top:0;
+}
+
+li.comment cite a {
+ color:#868686 !important;
+ text-decoration:none;
+ border-bottom:none !important;
+}
+
+li.comment cite a.admin-comment {
+ color:#CC0000 !important;
+}
+
+li.comment cite a.mod-comment {
+ color:#CC00FF !important;
+}
+
+li.comment cite a img {
+ max-width:16px;
+ max-height:16px;
+ border-bottom:none !important;
+}
+
+li.comment:hover blockquote {
+ border:1px solid #999999;
+}
+
+li.comment:hover cite {
+ background:transparent url('/web/20110211154847im_/http://myfursona.com/assets/images/overtip.gif') no-repeat scroll 20px 0pt;
+} */
+
+/* --- HELPDESK --- */
+
+#helpdesk #header_wrapper h1 {
+ /*background:url('/web/20110211154847im_/http://myfursona.com/assets/images/banners/2.png') top left no-repeat;*/
+}
+
+.relatedfaq {
+ /*background:url('/web/20110211154847im_/http://myfursona.com/assets/images/relatedfaq.jpg') top left no-repeat #12B4FF;*/
+ border-left:3px solid #0E8EC9;
+ padding:10px 10px 10px 70px; 
+ color:#FFFFFF;
+}
+
+.metadata {
+ /*background:url('/web/20110211154847im_/http://myfursona.com/assets/images/meta.jpg') top left no-repeat #666666;*/
+ border-left:3px solid #333333;
+ padding:10px 10px 10px 70px; 
+ color:#FFFFFF;
+}
+
+.relatedfaq ul {
+ margin:0;
+ padding:0;
+ list-style-type:none;
+ font-size:0.8em;
+}
+
+.relatedfaq a, .metadata a {
+ color:#FFFFFF !important;
+ border-bottom:none !important;
+ text-decoration:none;
+}
+
+#helpdesk #branding_wrapper h2 {
+ position:absolute;
+ top:85px;
+ left:340px;
+ color:#666666;
+ font-size:2.3em;
+ font-style:italic;
+ font-family:Georgia, 'Times New Roman', serif;
+}
+
+#helpdesk .col_right h2 a {
+ font-size:1.5em;
+ border-bottom:none !important;
+ color:#666666;
+}
+
+#helpdesk p.breadcrumb {
+ border-bottom:1px dotted #CCCCCC;
+ border-top:1px dotted #CCCCCC;
+ padding:3px 0;
+ color:#888888;
+}
+
+#helpdesk p.breadcrumb a {
+ border-bottom:none !important;
+ color:#888888;
+} 
+
+#helpdesk #body_header .col_left h2 {
+ font-size:2em;
+}
