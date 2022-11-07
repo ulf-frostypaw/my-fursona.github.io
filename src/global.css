@@ -10,7 +10,6 @@
 -------------------------------- */
 
 /* --- GENERAL --- */
-
 body {
  background:#FFFFFF;
  color:#000000;
@@ -87,16 +86,16 @@ form {
  margin-top:11px;
 }
 
-.tim#t_comments { /* background:url('/web/20110211154847im_/http://myfursona.com/assets/images/titles/title_comments.gif') top left no-repeat; */ }
-.tim#t_latestblogs { /* background:url('/web/20110211154847im_/http://myfursona.com/assets/images/titles/title_latestblogs.gif') top left no-repeat; */ }
-.tim#t_latestimages { /* background:url('/web/20110211154847im_/http://myfursona.com/assets/images/titles/title_latestimages.gif') top left no-repeat; */ }
-.tim#t_latestthreads { /* background:url('/web/20110211154847im_/http://myfursona.com/assets/images/titles/title_latestthreads.gif') top left no-repeat; */ }
-.tim#t_newmembers { /* background:url('/web/20110211154847im_/http://myfursona.com/assets/images/titles/title_newmembers.gif') top left no-repeat; */ }
-.tim#t_quickblog { /* background:url('/web/20110211154847im_/http://myfursona.com/assets/images/titles/title_quickblog.gif') top left no-repeat;  */}
-.tim#t_twitter { /* background:url('/web/20110211154847im_/http://myfursona.com/assets/images/titles/title_twitter.gif') top left no-repeat;  */}
-.tim#t_userinfo { /* background:url('/web/20110211154847im_/http://myfursona.com/assets/images/titles/title_userinfo.gif') top left no-repeat; */ }
+.tim#t_comments { background:url('../public/assets/img/titles/title_comments.gif') top left no-repeat; }
+.tim#t_latestblogs { background:url('../public/assets/img/titles/title_latestblogs.gif') top left no-repeat; }
+.tim#t_latestimages { background:url('../public/assets/img/titles/title_latestimages.gif') top left no-repeat; }
+.tim#t_latestthreads { background:url('../public/assets/img/titles/title_latestthreads.gif') top left no-repeat; }
+.tim#t_newmembers { background:url('../public/assets/img/titles/title_newmembers.gif') top left no-repeat; }
+.tim#t_quickblog { background:url('../public/assets/img/titles/title_quickblog.gif') top left no-repeat; }
+.tim#t_twitter { background:url('../public/assets/img/titles/title_twitter.gif') top left no-repeat; }
+.tim#t_userinfo { background:url('../public/assets/img/titles/title_userinfo.gif') top left no-repeat; }
 
-#t_welcome{ /* background:url('/web/20110211154847im_/http://myfursona.com/assets/images/titles/title_welcome.jpg') top left no-repeat;*/ text-indent:-9999em; width:587px; height:83px; margin-top:11px; }
+#t_welcome{ /*background:url('../public/assets/img/titles/title_welcome.jpg') top left no-repeat; */text-indent:-9999em; width:587px; height:83px; margin-top:11px; }
 
 /* --- FORMS --- */
 
@@ -194,7 +193,7 @@ div.s10 { border-top:8px solid #000000; }
 /* --- HEADER --- */
 
 #header_wrapper {
- /*background:url('/web/20110211154847im_/http://myfursona.com/assets/images/header_background.jpg') top left repeat-x #CCCCCC;*/
+ background:url('../public/assets/img/header_background.jpg') top left repeat-x #CCCCCC;
  width:100%;
  height:150px;
  font-size:0.8em;
@@ -202,7 +201,7 @@ div.s10 { border-top:8px solid #000000; }
 }
 
 #header_wrapper h1 {
- /*background:url('/web/20110211154847im_/http://myfursona.com/assets/images/banners/1.png') top left no-repeat;*/ /* Default: 1.png */
+ background:url('../public/assets/img/banners/1.png') top left no-repeat; /* Default: 1.png */
  position:absolute; 
  top:0;
  left:0;
@@ -221,7 +220,7 @@ div.s10 { border-top:8px solid #000000; }
  left:150px;
  width:274px; 
  height:60px;
- /* background:url('/web/20110211154847im_/http://myfursona.com/assets/images/header_logo.png') center center no-repeat; */ /* Default: header_logo.png */
+ background:url('../public/assets/img/header_logo.png') center center no-repeat; /* Default: header_logo.png */
 }
 
 
@@ -526,6 +525,7 @@ h3.secthead {
  list-style-type:none;
  margin:0 0 1.2em 0;
  padding:0;
+ display: block !important;
 }
 
 #latest ul#newestmembers li {
@@ -1482,33 +1482,34 @@ input:focus, select:focus, textarea:focus {
 
 /* --- FOOTER --- */
 
-#footer_wrapper {
- /* background:url('/web/20110211154847im_/http://myfursona.com/assets/images/footer_background.jpg') bottom left repeat-x #FFFFFF; */
+.footer_wrapper {
+ background:url('../public/assets/img/footer_background.jpg') bottom left repeat-x #FFFFFF;
  width:100%;
  height:30px;
  font-size:0.6em;
- position:relative;
- top:32px;
+ position: relative;
+ top: 60px;
+ bottom: 0;
 }
 
-#footer_wrapper .copyright {
+.footer_wrapper .copyright {
  float:right;
  padding:0.3em 2em 0 2em;
 }
 
-#footer_wrapper .copyright a {
+.footer_wrapper .copyright a {
 
  color:#999999;
  text-decoration:none;
 }
 
 
-#footer_wrapper .contact {
+.footer_wrapper .contact {
  float:left;
  padding:0.3em 2em 0 2em;
 }
 
-#footer_wrapper .contact a {
+.footer_wrapper .contact a {
  color:#999999;
  text-decoration:none;
 }
@@ -1525,7 +1526,7 @@ input:focus, select:focus, textarea:focus {
        From http://www.oscaralexander.com/tutorials/how-to-make-sexy-buttons-with-css.html --- */
 
 a.button {
-    /* background: transparent url('/web/20110211154847im_/http://myfursona.com/assets/images/bg_button_a.gif') no-repeat scroll top right;*/
+    background: transparent url('../public/assets/img/bg_button_a.gif') no-repeat scroll top right;
 
     color: #444;
     display: block;
@@ -1539,7 +1540,7 @@ a.button {
 }
 
 a.button span {
-    /* background: transparent url('/web/20110211154847im_/http://myfursona.com/assets/images/bg_button_span.gif') no-repeat;*/
+    background: transparent url('../public/assets/img/bg_button_span.gif') no-repeat;
     display: block;
     line-height: 14px;
     padding: 5px 0 5px 9px;
@@ -1591,7 +1592,7 @@ a.button:active span {
 /* Title replacement */
 
 #about_inner #aboutmenu { text-align:center; margin-bottom:1.3em; }
-#about_inner #aboutmenu h2 { /*background:url('/web/20110211154847im_/http://myfursona.com/assets/images/about-title.gif') center center no-repeat #FFFFFF; */ border-bottom:1px solid #999999; font-weight:normal; font-size:3em; line-height:1em; }
+#about_inner #aboutmenu h2 { background:url('../public/assets/img/about-title.gif') center center no-repeat #FFFFFF; border-bottom:1px solid #999999; font-weight:normal; font-size:3em; line-height:1em; }
 
 #about_inner .menu {
 	margin: 0 auto;
